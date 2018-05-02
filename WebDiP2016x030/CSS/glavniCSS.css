@@ -1,0 +1,309 @@
+body{
+    margin: 0;
+    background: url(../Slike/background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover; 
+    -moz-background-size: cover;    
+    -o-background-size: cover;     
+    background-size: cover;
+    color: white;
+    font-family: sans-serif;
+}
+
+a{
+    color: lightskyblue;
+    cursor: pointer;
+}
+
+#uvjetiKoristenja{
+    position: fixed;
+    bottom: 0px;
+    height: 60px;
+    padding: 5px;
+    margin: 0;
+    width: 100%;
+    background: rgb(244, 164, 66);
+    z-index: 1;
+    text-align: center;
+}
+
+#slazemSe{
+    cursor: pointer; 
+    margin-top: 5px; 
+    width: 20%; 
+    text-align: center;
+}
+
+.fb_iframe_widget{
+    margin-top: 0;
+    margin-bottom: 1%;
+    margin-right: 1%;
+}
+#twitter-widget-0{
+    margin-top: 1%;
+    margin-bottom: 0;
+}
+
+/*reCaptcha*/
+#recaptcha_widget_div{
+    margin-left: 26%;
+    margin-top: 15%;
+}
+
+/*tablica korisnika*/
+.popisKorisnika{
+    margin-top: 4%;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.tablicaKorisnika{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tablicaKorisnika thead{
+    height: 30px;
+}
+
+.tablicaKorisnika th{
+    border: 2px solid darkgray;
+}
+
+.tablicaKorisnika tr td{
+    border: 1px solid darkgray;
+    padding: 7px;
+}
+
+/*Greške i obavijesti (prijava)*/
+.kriviUnos{
+    border: 2px solid red;
+}
+
+h2{
+    font-size: 30px;
+}
+
+#notifikacija, #dat{
+    width: 100%;
+    text-align: center;
+}
+
+/*navigacija + zaglavlje*/
+.meni{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 17%;
+    background: rgba(175, 183, 191, 0.6);
+    position: fixed;
+    height: 91%;
+    overflow-x: hidden; 
+    overflow-y: auto;
+}
+
+.meni a {
+    display: block;
+    color: #111;
+    padding: 6% 10%;
+    text-decoration: none;
+}
+
+.meni a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.meni a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+.zaglavlje{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(22, 22, 22, 0.85);
+    height: 60px;
+}
+
+.divMeni{
+    margin-top: 60px;
+}
+
+.zaglavlje ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.zaglavlje li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 19px 16px;
+    text-decoration: none;
+}
+
+#naslovSkupine{
+    padding: 15px;
+    font-size: 25px;
+    width: 50%;
+    float: left;
+}
+
+.odjava{
+    float: right;
+    height: 60px;
+    background: rgba(198, 35, 23, 0.8);
+}
+
+#cart{
+    float: right;
+    height: 60px;
+    width: 6%;
+    background: rgba(175, 183, 191, 0.6);
+    display: block;
+    text-decoration: none;
+}
+
+#cart a{
+    padding: 0;
+}
+
+#cart img{
+    width: 70%;
+    margin: 4% 4% 4% 10%;
+    cursor: pointer;
+}
+
+.odjava a{
+    margin: 2px;
+}
+
+.desnaTipka{
+    float: right;
+    height: 60px;
+    background: rgba(81, 232, 88, 0.8);
+}
+
+.desnaTipka a{
+    margin: 2px;
+}
+
+/*O autoru*/
+.podaciAutor{
+    margin-left: 20%;
+    margin-top: 3%;
+    float: left;
+}
+
+.podaciAutor ul{
+    font-size: 18px;
+}
+
+.headerIndex{
+    margin-top: 5%;
+    margin-left: 2%;
+    width: 20%;
+}
+
+.sadrzajIndex{
+    overflow: hidden;
+    margin-top: 5%;
+    padding-left: 2%;
+    width: 40%;
+    float: left;
+    background: rgba(22, 22, 22, 0.6);
+}
+
+.profilna{
+    text-align: center;
+    width: 20%;
+    float: left;
+}
+
+.profilna img {
+    height: 100%;
+    width: 100%;
+}
+
+footer{
+    float: left;
+    margin-left: 40%;
+    margin-top: 5%;
+}
+
+/*Dnevnici rada - tablice*/
+.tablicaLog{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tablicaLog caption{
+    font-size: 25px;
+    padding: 5px;
+    text-align: left;
+}
+
+.tablicaLog thead{
+    height: 50px;
+}
+
+.tablicaLog th{
+    border: 2px solid darkgray;
+}
+
+.tablicaLog tr td{
+    border: 1px solid darkgray;
+    padding: 7px;
+}
+
+.brojStranica{
+    margin-top: 1%;
+}
+
+label[for="brStranicaPrijava"], label[for="brStranicaBaze"], label[for="brStranicaOstalo"]{
+    width: 22%;
+    margin-bottom: 2%;
+    font-size: 15px;
+}
+
+.indexStr{
+    margin: 0% 1% 0% 2%;
+}
+
+#prijavaKorIme, #prijavaDate, #bazaKorIme, #bazaDate, #ostaloKorIme, #ostaloDate, #pregledKorIme, #pregledDisk{
+    cursor: pointer;
+}
+
+#korisnikKorIme, #korisnikKorIme{
+    cursor: pointer;
+}
+
+/*Dokumentacija projekta*/
+.opisProjekt{
+    z-index: -1;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 8% 20% 4% 20%;
+    padding: 4%;
+    background: rgba(22, 22, 22, 0.6);
+    width: 70%;
+}
+
+/*Dokumentacija*/
+.naslovPoglavlja{
+    margin-left: 2%;
+}
+
+.tekstPoglavlja{
+    margin-left: 4%
+}
+
+
+.link{
+    margin-right: 5%;
+    color: lightskyblue;
+}

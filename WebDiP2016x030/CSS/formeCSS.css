@@ -1,0 +1,518 @@
+#footerPrijava{
+    text-align: center;
+    margin: 0;
+    width: 100%;
+}
+
+/*Uređivanje stranice prijava*/
+#prijava{
+    z-index: -1;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 8% 20% 4% 20%;
+    padding: 4%;
+    background: rgba(22, 22, 22, 0.6);
+    width: 50%;
+}
+
+.podaci{
+    margin-left: 10%;
+}
+
+label {
+    float: left;
+    width: 30%;
+    text-align: right;
+    margin-right: 2%;
+    font-size: 18px;
+    padding-top: 1%;
+}
+
+input{
+    width: 50%;
+    font-size: 18px;
+}
+
+#radioZapamti{
+    margin-left: 7%;
+    font-size: 18px;
+    width: 30%;
+    text-align: right;
+    float: left;
+    margin-top: 0;
+}
+
+label[for="zapamtiDa"], label[for="zapamtiNe"]{
+    margin-top: 0;
+    padding-top: 0;
+    width: 5%;
+    text-align: center;
+}
+
+label[for="zapamtiDa"]{
+    float: left;
+    margin-left: 2%;
+}
+
+#zapamtiDa{
+    float: left;
+    margin-left: 2%;
+}
+
+label[for="zapamtiNe"]{
+    float: left;
+    margin-left: 2%;
+}
+
+#zapamtiNe{
+    float: left;
+    margin-left: 2%;
+    margin-right: 15%;
+}
+
+#zapamtiDa, #zapamtiNe{
+    width: 9%;
+}
+
+#linkReg, #posaljiPrijavu{
+    width: 20%;
+}
+
+#kontrole{
+    overflow: hidden;
+    float:left;
+    width: 100%;
+    margin-top: 0;
+    margin-left: 40%;
+}
+
+#obavijestPrijava b{
+    color: green; 
+    font-size: 25px;
+    text-align: center;
+}
+
+#obavijestPrijava{
+    text-align: center;
+}
+
+
+/*Provejra jednokratnog koda kod prijave u dva koraka*/
+#prijavaDvaKoraka{
+    z-index: -1;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 8% 20% 4% 20%;
+    padding: 4%;
+    background: rgba(22, 22, 22, 0.6);
+    width: 45%;
+}
+
+#provjeraKoda{
+    margin-top: 5%;
+    margin-left: 35%;
+    width: 30%;
+}
+
+label[for="dvaKoraka"]{
+    text-align: center;
+    width: 18%;
+    margin-right: 2%;
+}
+
+#dvaKoraka{
+    width: 70%;
+}
+
+/*Uređivanje stranice registracije*/
+#registracija{
+    z-index: -1;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 8% 25% 4% 25%;
+    padding: 4%;
+    background: rgba(22, 22, 22, 0.6);
+    width: 40%;
+}
+
+#registracija input:not(#dvaKorakaDa):not(#dvaKorakaNe):not(#tipkaSend), #registracija label{
+    margin-top: 2%;
+}
+
+#tipkaSend{
+    margin-top: 5%;
+    width: 30%;
+}
+
+#radioDvaKoraka{
+    float: left;
+    font-size: 18px;
+    width: 34%;
+    padding-left: 3%;
+    text-align: right;
+    margin-top: 2%;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+label[for="dvaKorakaDa"], label[for="dvaKorakaNe"]{
+    margin-top: 0;
+    padding-top: 0;
+    width: 8%;
+    text-align: center;
+}
+
+label[for="dvaKorakaDa"]{
+    float: left;
+    margin-left: 2%;
+}
+
+#dvaKorakaDa{
+    float: left;
+    margin-left: 2%;
+}
+
+label[for="dvaKorakaNe"]{
+    float: left;
+    margin-left: 2%;
+}
+
+#dvaKorakaNe{
+    float: left;
+    margin-left: 2%;
+    margin-right: 15%;
+}
+
+#dvaKorakaDa, #dvaKorakaNe{
+    margin-top: 3%;
+    width: 9%;
+}
+
+/*Skripta ispisa korisnika*/
+#sekcijaKorisnik{
+    z-index: -1;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 8% 20% 4% 20%;
+    padding: 4%;
+    background: rgba(22, 22, 22, 0.6);
+    width: 70%;
+}
+
+
+/*ispis korisnika otključavanje/zaključavanje*/
+#kontrolaKorisnik{
+    z-index: -1;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 8% 20% 4% 20%;
+    padding: 4%;
+    background: rgba(22, 22, 22, 0.6);
+    width: 70%;
+}
+
+
+/*korisnikov profil*/
+#korisnikPodaci{
+    z-index: -1;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 8% 25% 4% 25%;
+    padding: 4%;
+    background: rgba(22, 22, 22, 0.6);
+    width: 40%;
+}
+
+label[for="brBodova"]{
+    margin-left: 9%;
+    margin-top: 2%;
+}
+
+#odabirPodrucja{
+    position: relative;
+    margin-top: 3%;
+    width: 40%;
+    padding: 5px;
+}
+
+#korisnikPodaci label:not(label[for="brBodova"]){
+    margin-top: 2%;
+    margin-left: 3%; 
+}
+
+#korisnikPodaci input:not(#brKorakaDa):not(#brKorakaNe):not(#tipkaAzuriraj):not(#uredi), #korisnikPodaci label{
+    margin-top: 2%;
+}
+
+#tipkaAzuriraj, #uredi{
+    margin-top: 5%;
+    width: 30%;
+}
+
+#brKoraka{
+    float: left;
+    font-size: 18px;
+    width: 34%;
+    padding-left: 3%;
+    text-align: right;
+    margin-top: 2%;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+label[for="brKorakaDa"], label[for="brKorakaNe"]{
+    margin-top: 0;
+    padding-top: 0;
+    width: 8%;
+    text-align: center;
+}
+
+label[for="brKorakaDa"]{
+    float: left;
+    margin-left: 2%;
+}
+
+#brKorakaDa{
+    float: left;
+}
+
+label[for="brKorakaNe"]{
+    float: left;
+    margin-left: 2%;
+}
+
+#brKorakaNe{
+    float: left;
+    margin-right: 15%;
+}
+
+#brKorakaDa, #brKorakaNe{
+    margin-top: 2%;
+    width: 5%;
+}
+
+/*Administratorska stranica unosa pomaka vremena*/
+#pomakVremena{
+    z-index: -1;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 8% 20% 4% 20%;
+    padding: 4%;
+    background: rgba(22, 22, 22, 0.6);
+    width: 50%;
+}
+
+#potvrdiPomak{
+    margin-top: 5%;
+    width: 30%;
+}
+
+
+/*Prikaz područja interesa i diskusija*/
+#prikazPodrucja{
+    z-index: -1;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 8% 20% 4% 20%;
+    padding: 4%;
+    background: rgba(22, 22, 22, 0.6);
+    width: 69%;
+}
+
+.divPodrucja{
+    margin-top: 2%;
+}
+
+.divPodrucja div:not([id^="paginac"]){
+    background: rgba(150, 155, 163, 0.6);
+    overflow: hidden;
+}
+
+.tipkaPodrucja{
+    width: 35%;
+    margin-right: 2%;
+}
+
+.divDiskusija table{
+    margin: 2% 0% 2% 0%;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+}
+
+.divDiskusija table tr td th{
+    padding: 10px;
+}
+
+.divDiskusija table tr {
+    height: 40px;
+}
+
+.dodajKom{
+    width: 20%;
+    float: right;
+    margin: 3% 2% 2% 3%;
+}
+
+textarea {
+    width: 400px;
+    height: 100px;
+    margin: 25px;
+    float: left;
+}
+
+#komentiraj input[type="submit"]{
+    width: 15%;
+    margin-top: 2.5%;
+}
+
+#azurirajKom input[type="submit"]{
+    width: 15%;
+    margin-top: 2.5%;
+}
+
+/*Područje kupona*/
+#kuponiSekcija{
+    z-index: -1;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 8% 20% 4% 20%;
+    padding: 4%;
+    background: rgba(22, 22, 22, 0.6);
+    width: 69%;
+}
+
+
+#kuponiSekcija figure{
+    width: 25%;
+    background: rgba(150, 155, 163, 0.6);
+    margin: 3%;
+}
+
+#kuponiSekcija figure figcaption{
+    padding: 4%;
+}
+
+.kos{
+    color:goldenrod;
+    margin-left: 15%;
+}
+
+#kuponiSekcija input{
+    width: 20%;
+    margin-left: 3%;
+}
+
+#mogucaPod{
+    padding: 0.5%;
+    width: 15%;
+    margin-left: 3%;
+}
+
+#pregledKupona{
+    position: absolute;
+top: 13%;
+left: 40%;
+width: 30%;
+height: 80%;
+border: 1px solid #ccc;
+background: rgb(216, 216, 208);
+padding: 1%;
+}
+
+.objectPregled{
+    height: 70%;
+    width: 100%;
+}
+
+/*Kreiranje novog područja*/
+#novoPodrucje{
+    z-index: -1;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 8% 20% 4% 20%;
+    padding: 4%;
+    background: rgba(22, 22, 22, 0.6);
+    width: 70%;
+}
+
+#odabirMod{
+    position: relative;
+    width: 40%;
+    padding: 5px;
+}
+
+/*Unos diskusije u područje*/
+#odabirPod{
+    position: relative;
+    width: 40%;
+    padding: 5px;
+}
+
+#pravilaDisk{
+    width: 50%;
+    margin: 0%;
+    margin-bottom: 2%;
+}
+
+#kreirajKupon{
+    z-index: -1;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 8% 20% 4% 20%;
+    padding: 4%;
+    background: rgba(22, 22, 22, 0.6);
+    width: 50%;
+}
+
+#uploadKupon{
+    margin-top: 2%;
+}
+
+/*Pregled korisnika po diskusiji*/
+#kontrolaPodrucja{
+    z-index: -1;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 8% 20% 4% 20%;
+    padding: 4%;
+    background: rgba(22, 22, 22, 0.6);
+    width: 70%;
+}
+
+/*Slanje obavijesti*/
+#slanjeObavijesti{
+    z-index: -1;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 8% 20% 4% 20%;
+    padding: 4%;
+    background: rgba(22, 22, 22, 0.6);
+    width: 50%;
+}
+
+#obavijestTip{
+    margin-top: 1%;
+}
+
+.odabirObav{
+    margin-top: 1%;
+}
+
+/*SLANJE OBAVIJESTI*/
+#slanjeObavijesti select{
+    padding: 5px;
+}

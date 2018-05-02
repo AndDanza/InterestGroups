@@ -1,0 +1,218 @@
+/*SCREEN TABLET*/
+@media screen and (min-width: 521px) and (max-width: 930px){
+    #naslovSkupine{
+        font-size: 18px;
+    }
+    
+    label{
+        width: 40%;
+    }
+        
+    footer{
+        margin-left: 30%;
+    }
+    
+    /*Prijava*/
+    #prijava{
+        margin-top: 12%;
+    }   
+    
+    label[for="dvaKoraka"]{
+        margin-right: 6%;
+    }
+    
+    .podaci{
+        margin-left: 0;
+    }
+    
+    /*Registracija*/
+    #registracija{
+        margin: 12% 17% 10% 17%;
+        width: 60%;
+    }
+    
+    /*O autoru*/
+    .meni{
+        width: 18%;
+    }
+    
+    .sadrzajIndex{
+        width: 50%;
+    }
+    
+    .profilna{
+        margin-top: 4%;
+        width: 30%;
+    }
+    
+    #radioDvaKoraka{
+        width: 40%;
+        text-align: left;
+    }
+    
+    #dvaKorakaDa, #dvaKorakaNe {
+        margin-top: 3%;
+        width: 5%;
+    }
+}
+
+/*SCREEN MOBITEL*/
+@media screen and (min-width: 1px) and (max-width: 520px){
+    h2{
+        font-size: 15px;
+    }
+    
+    label, input, p{
+        font-size: 13px;
+    }
+    
+    footer{
+        font-size: 12px;
+        margin-left: 30%;
+    }
+    
+    
+    /*Responzivnost menia i zaglavlja*/
+    #naslovSkupine{
+        font-size: 15px;
+        padding: 9px;
+    }
+    
+    .zaglavlje, .zaglavlje ul{
+        height: 50px;
+    }
+    
+    .odjava{
+        font-size: 12px;
+        height: 50px;
+    }
+    
+    .zaglavlje li a {
+        padding: 19px 8px;
+    }
+    
+    .divMeni{
+        margin-top: 50px;
+        font-size: 13px;
+    }
+    
+    .divMeni ul{
+        width: 25%;
+    }
+    
+    
+    /*oAutoru*/
+    .podaciAutor{
+        margin-left: 30%;
+        width: 70%;
+    }
+    
+    .sadrzajIndex{
+        width: 95%;
+    }
+    
+    .sadrzajIndex ul{
+        font-size: 13px;
+    }
+    
+    .headerIndex{
+        font-size: 15px;
+    }
+    
+    .profilna{
+        width: 50%;
+    }
+    
+    
+    /*Prijava*/
+    #prijava, #prijavaDvaKoraka{
+        width: 85%;
+        margin-top: 20%;
+        margin-left: 3%;
+    }
+    
+    #prijavaDvaKoraka{
+        margin-top: 5%;
+    }
+    
+    #radioZapamti{
+        font-size: 13px;
+        width: 35%;
+    }
+    
+    label[for="zapamtiDa"], label[for="zapamtiNe"]{
+        font-size: 13px;
+    }
+    
+    .podaci{
+        margin-left: 0;
+    }
+    
+    .podaci label{
+        width: 30%;
+    }
+    
+    .podaci label, .podaci input{
+        font-size: 13px;
+    }
+    
+    .desnaTipka{
+        font-size: 12px;
+        height: 50px;
+    }
+    
+    #kontrole{
+        margin-left: 20%;
+    }
+    
+    #posaljiPrijavu{
+        font-size: 13px;
+        margin-left: 20%;
+    }
+    
+    label[for="dvaKoraka"], #dvaKoraka{
+        font-size: 13px;
+    }
+    
+    label[for="dvaKoraka"]{
+        width: 15%;
+        margin-left: 10%;
+    }
+    
+    #dvaKoraka{
+        width: 60%;
+        margin-left: 3%;
+    }
+    
+    #provjeraKoda{
+        width: 20%;
+        font-size: 13px;
+        margin-left: 40%;
+    }
+    
+    /*Registracija*/
+    #registracija{
+        width: 85%;
+        margin-top: 20%;
+        margin-left: 3%;
+    }
+    
+    #radioDvaKoraka{
+        font-size: 13px;
+        width: 40%;
+        text-align: left;
+    }
+    
+    #dvaKorakaDa, #dvaKorakaNe {
+        margin-top: 3%;
+        width: 5%;
+    }
+    
+    #registracija label, #registracija input{
+        font-size: 13px;
+    }
+    
+    #tipkaSend{
+        margin-left: 20%;
+    }
+}

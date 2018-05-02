@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Interesne skupine - O autoru</title>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="naslov" content="O autoru">
+        <meta name="kljucneRijeci" content="FOI, WebDiP, HTML, CSS">
+        <meta name="datum" content="06.05.2017.">
+        <meta name="autor" content="anddanzan">
+        <meta property="og:url" content="https://barka.foi.hr/WebDiP/2016_projekti/WebDiP2016x030/o_autoru.html" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="eInteresne skupine" />
+        <meta property="og:description" content="Najbolje mjesto za informacije, kontorlirano i sigurno okruženje za djeljenje informacija" />
+
+        <link rel="stylesheet" type="text/css" href="CSS/glavniCSS.css">
+        <link rel="stylesheet" type="text/css" href="CSS/responzivnost.css">
+    </head>
+
+    <body>
+        <header class="zaglavlje">
+            <ul>
+                <li><b id="naslovSkupine">e-Spajanje interesnih skupina</b></li>
+            </ul>
+        </header>
+
+        <div class="divMeni">
+            <nav>
+                <ul class="meni">
+                    <li><a href="o_autoru.html"><b>O autoru</b></a></li>
+                    <li><a style="background: gainsboro;" href="dokumentacija.html"><b>Dokumentacija</b></a></li>
+                    <li><a href="podrucjaZaKorisnika.php"><b>Područja interesa</b></a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <section class="opisProjekt">
+            <h2>Dokumentacija sustava</h2>
+            <article>
+                <h3 class="naslovPoglavlja">Opis projektnog zadatka</h3>
+                <p class="tekstPoglavlja">
+                    Tema ovog projektnog zadatka bila je izraditi sustav koji će omogućiti povezivanje osoba na temelju 
+                    zajedničkih interesa. eInteresne skupine sastoji se od područja interesa (interesnih skupina) od 
+                    kojih svako područje sadrži više diskusija na koje registrirani korisnici mogu objavljivati svoje 
+                    komentare te doprinositi kvaliteti istih. Uz mogućnost djeljenja informacija preko sustava, korisnici
+                    mogu svojim akcijama unutar sustava prikupljati bodove te iste iskoristiti na kupovinu kupona. 
+                    Bodovi mogu biti potrošeni na razne kupone koje svakodnevno kreira administrator te području 
+                    interesa dodjeljuje moderator. Sva područja interesa kao i diskusije u njima kontrolira moderator kojem
+                    je dano područje dodjeljeno. Moderatori mogu zabraniti komentiranje korisnicima, te slati obavijesti.
+                </p>
+                <hr>
+                <h3 class="naslovPoglavlja">Opis projektnog rješenja</h3>
+                <p class="tekstPoglavlja">
+                    Projektno rješenje kreirano je po uputama i samom opisu projektnog zadatka. Svi djielovi sustava kreirani
+                    su tako da prate rad korisnika, njegovo kretanje kroz sam sustav i rad u istom. Korištenjem jQuery-a 
+                    i PHP-a kreirani su dinamički objekti čime je sustav atraktviniji korisniku, ali i pregledniji
+                    za rad samim time što se na zaslonu nalazi ono što želi vidjeti. Projekt nije dovršen u potpunosti te 
+                    ima mana u pogledu neispunjenih zahtjeva ili nekih funkcionalnosti koje treba doraditi, ali općeniti dojam
+                    je vrlo dobar te svakom korisniku uz vrlo kratko vrijeme proučavanja pruža opširan sadržaj i lagano 
+                    korištenje.
+                </p>
+                <hr>
+                <h3 class="naslovPoglavlja">ERA model</h3>
+                <div class="tekstPoglavlja">
+                    <a href="Slike/eramodel.png" target="_blank">
+                        <figure style="float: left;">
+                            <img src="Slike/eramodel.png" alt="ERA model sustava" style="height: 300px">
+                            <figcaption>ERA model sustava</figcaption>
+                        </figure>
+                    </a>
+                    <p style="padding-top: 2%;">
+                        ERA model sustava prikazuje odnose 22 tablice u bazi podataka. Osnovna tablica je tablica korisnik koja 
+                        sadrži podatke o svim registriranim korisnicima sustava. Uz osnovne podatke koji se nalaze u tablici o 
+                        korisniku se mogu pratiti i njegove akcije u sustavu koje su pohranjene u log sustava. Log sustava sastoji
+                        se od nad tablice (Log sustava) i pod tablica log pristupa bazi podataka, log prijava u sustav te ostale aktivnosti. 
+                        Uz navedene log-ove (dnevnike) postoji i log bodova u kojem se za korisnike može pratiti i stanje bodova to 
+                        jest tijek prikupljanja bodova. Samim time što je cilj ovog sustava spajanje interesnih skupina postoji i tablica
+                        područja interesa u kojoj nalaze se sva područja u sustavu. Korisnik ista može odabrati, a odabir je pohranjen u tablici 
+                        odabir poručja interesa. Odabirom područja korisnik automatski dobiva pravo komentiranja (komentari su pohranjeni u tablici
+                        komentari, a povezuju korisnika i diskusiju na kojoj je objavljen komentar) na svim diskusijama unutar odabranog područja 
+                        što je pohranjeno u tablici pretplata. Uz navedene funkcionalnosti i mogućnosti, korisniku je također omogućena
+                        kupnja kupona koji su pohranjeni u tablici kuponi članstva, ukoliko se korisnik odluči na kupnju istih kreira
+                        se podatak o košarici te se odabrani kuponi pohranjuju u tablicu sadržaj košarice.
+                    </p>
+                </div>
+                <hr style="clear: left;" >
+                <h3 class="naslovPoglavlja">Skripte, mapa mjesta i navigacijski dijagram</h3>
+                <div class="tekstPoglavlja">
+                    <b>Popis skripata</b>
+                    <table id="docTablica" class="tablicaLog" style="margin-top: 2%;">
+                        <thead>
+                            <tr><th>SKRIPTA</th>
+                            <th>OPIS</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>aktivacija.php</td><td>skripta kojom registrirani korisnik aktivira svoj profil</td>
+                            </tr>
+                            <tr>
+                                <td>definirajKupon.php </td><td>moderator može kreirani kupon definirati za svoje područje</td>
+                            </tr>
+                            <tr>
+                                <td>dnevnik.php</td><td>skripta ispisa zapisa u tablicama dnevnika sustava</td>
+                            </tr>
+                            <tr>
+                                <td>dodajDiskusiju.php</td><td>moderator može dodati diskusiju u svoje područje te automatski pretplatiti 
+                                    sve korisnike tog područja na novu diskusiju</td>
+                            </tr>
+                            <tr>
+                                <td>dokumentacija.html</td><td>statička stranica s podacima o sustavu i opisom</td>
+                            </tr>
+                            <tr>
+                                <td>kontrolaKorisnika.php</td><td>skripta administratora pomoću koje može deaktivirati 
+                                    korisnika ili ga ponovno aktivirati</td>
+                            </tr>
+                            <tr>
+                                <td>kosarica.php</td><td>skripta u kojoj korisnik može pregledati kupone koje je odabrao</td>
+                            </tr>
+                            <tr>
+                                <td>kreirakKupon.php</td><td>skripta pomoću koje administrator kreira kupon, daje mu naziv, upload pdf-a</td>
+                            </tr>
+                            <tr>
+                                <td>kreirajPodrucje.php</td><td>administrator može kreirati područje i dodati moderatora koji će 
+                                    kontrolirati isto</td>
+                            </tr>
+                            <tr>
+                                <td>kuponi.php</td><td>skripta u kojoj korisnik može vidjet isve dostupne kupone za svoja područja. Moderator vidi
+                                    sve kupone u svojim područjima, dok administrator vidi sve kupone sustava.</td>
+                            </tr>
+                            <tr>
+                                <td>a_autoru.html</td><td>statička stranica o podacima o autoru sustava</td>
+                            </tr>
+                            <tr>
+                                <td>obavijsti.php</td><td>skripta za slanje obavijsti, moguće slanje pojedinačnih ili obavijesti svima u 
+                                    diskusiji</td>
+                            </tr>
+                            <tr>
+                                <td>odjava.php</td><td>skripta koja se brine o gašenju sesije i ažurnosti dnevnika prijava</td>
+                            </tr>
+                            <tr>
+                                <td>podrucjaKorisnika.php</td><td>dinamička stranica koja se prilagođava korisnicima. Neregistrirani 
+                                    korisnik vidi sva područja s tri diskusije s najviše komentara, registirrani korisnik vidi područja  
+                                    je pretplaćen te može komentirati, moderator vidi područja kojima moderira, a administrator sve vidi.</td>
+                            </tr>
+                            <tr>
+                                <td>pregledKorisnikaModerator.php</td><td>moderator može zabraniti korisniku komentiranje na određenoj 
+                                    diskusiji njegovog područja interesa.</td>
+                            </tr>
+                            <tr>
+                                <td>prijava.php</td><td>skripta za provjeru prijave i kreiranje sesije</td>
+                            </tr>
+                            <tr>
+                                <td>profil.php</td><td>profil korisnika na kojem može vidijeti i ažurirati podatke, odabrati i 
+                                    promjeniti područja interesa (samo registrirani korisnik) te vidjeti stanje bodova</td>
+                            </tr>
+                            <tr>
+                                <td>registracija.php</td><td>skripta za registraciju korisnika u sustav</td>
+                            </tr>
+                            <tr>
+                                <td>unosPomaka.php</td><td>skripta za pomak vremena sustava</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <b style="margin-top: 2%;">Navigacijski dijagram</b>
+                    <br>
+                    <a href="Slike/navigacijski.png" target="_blank">
+                        <figure style="float: left;">
+                            <img src="Slike/navigacijski.png" alt="NavigacijskiDijagram sustava" style="height: 300px">
+                            <figcaption>NavigacijskiDijagram sustava</figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <hr style="clear:left;">
+                <h3 class="naslovPoglavlja">Popis i opis korištenih tehnologija i alata</h3>
+                <div class="tekstPoglavlja">
+                    <b>Korišteni alati</b>
+                    <ul>
+                        <li>Net Beans 8.2</li>
+                        <li>phpMyAdmin 5.55</li>
+                        <li>FileZilla</li>
+                        <li>MySQL Workbench 6.3</li>
+                        <li>Putty</li>
+                        <li>Draw.io</li>
+                    </ul>
+                    <b>Korištene tehnologije</b>
+                    <ul>
+                        <li>PHP 5.6</li>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>jQuery 1.2</li>
+                        <li>Javascript</li>
+                        <li>MySQL</li>
+                    </ul>
+                    Cijeli projekt pisan je u razvojnom okruženju NetBeans 8.2 korištenjem tehnologija poput PHP-a, HTML-a,
+                    CSS-a te jQuery-a. Za samu izradu i izgled stranice korišteni su HTML i CSS, kako bi sustav pratio rad
+                    korisnika te mu se prilagođavao korišten je jQuery. Javascript je upotrbljen samo za funckcionalnost djeljenja 
+                    na društvenim mrežama. Baza podataka projekta kreirana je prvotno u okruženju MySQL Workbench te je potom 
+                    učitana u phpMyAdmin instaliran na serveru barka.foi.hr. Programski jezik u kojem je kreirana baza podataka je MySQL.
+                </div>
+                <hr>
+                <h3 class="naslovPoglavlja">Vanjski moduli/biblioteke</h3>
+                <div class="tekstPoglavlja">
+                    Vanjski moduli/biblioteke korišteni su u određenim dijelovim sustava. 
+                    <ol>
+                        <li>jQuery biblioteka - Dostupna na: 
+                            <a target="_blank" href="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+                                https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js
+                            </a>
+                        </li>
+                        <li>jQuery biblioteka za Cookie - Dostupno na: 
+                            <a target="_blank" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js">
+                                https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js
+                            </a>
+                        </li>
+                        <li>Facebook Share API - Dostupno na: 
+                            <a target="_blank" href="https://developers.facebook.com/docs/plugins/share-button">
+                                https://developers.facebook.com/docs/plugins/share-button
+                            </a>
+                        </li>
+                        <li>Twitter Share API - Dostupno na: 
+                            <a target="_blank" href="https://dev.twitter.com/web/tweet-button">
+                                https://dev.twitter.com/web/tweet-button
+                            </a>
+                        </li>
+                        <li>ReCaptcha API - Dostupno na: 
+                            <a target="_blank" href="https://developers.google.com/recaptcha/old/docs/php">
+                                https://developers.google.com/recaptcha/old/docs/php
+                            </a>
+                        </li>
+                    </ol>
+                    Biblioteka na linku 1. osnovna je biblioteka jQuery-a bez koje nije moguće pisati jQuery kod unutar js file-ova.
+                    Drugi link korišten je prilikom kreiranja kolačića na klijentskoj strani, prvenstveno kolačić neregistriranog korisnika.
+                    Jedna od funkcionalnosti sustava također je djeljenje sadsržaja preko društvenih mreža, a uz pomoć
+                    Facebook i Twitter Share API-a to je omogućeno. Oba API-a koriste Javascript te već definirane tipke
+                    koje su preuzete i ugrađene u kod.
+                </div>
+            </article>
+        </section>
+
+        <footer id="footerPrijava">
+            <div style="text-align: center; padding-bottom: 5px;">
+                Prijava u sustav e-Interesnih skupina<br>
+                <div class="fb-share-button" data-layout="button_count" data-size="small" data-mobile-iframe="true">
+                    <a class="fb-xfbml-parse-ignore" target="_blank" 
+                       href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Share
+                    </a>
+                </div>
+                <a class="twitter-share-button" href="https://twitter.com/intent/tweet">Tweet</a><br>
+                &copy; 2017 A.Danzante
+            </div>
+        </footer>
+
+        <script src="jQuery/socijalneMreze.js"></script>
+
+    </body>
+</html>
